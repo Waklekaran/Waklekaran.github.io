@@ -1,0 +1,243 @@
+
+/* ===== KARAN WAKLE PORTFOLIO ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* NAVBAR */
+
+header {
+    background: #0b192b;
+    border-bottom: 1px solid #173657;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.navbar h2 span {
+    color: #168cff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #d5e5f5;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover {
+    color: #168cff;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 80vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(
+        circle at top,
+        #12345b,
+        #07111f 65%
+    );
+}
+
+.hero p:first-child {
+    color: #168cff;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 8vw, 75px);
+    margin: 15px 0;
+    letter-spacing: 3px;
+}
+
+.hero h3 {
+    color: #168cff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #b8c9dc;
+    max-width: 550px;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 13px 30px;
+    background: #168cff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0067cc;
+    transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #168cff;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: auto;
+    color: #c0cede;
+}
+
+/* PROJECTS */
+
+.project-card,
+.achievement-card {
+    background: #10233a;
+    border: 1px solid #1b4168;
+    padding: 25px;
+    margin: 18px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.project-card:hover,
+.achievement-card:hover {
+    border-color: #168cff;
+    transform: translateY(-4px);
+}
+
+.project-card h3,
+.achievement-card h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.project-card p,
+.achievement-card p {
+    color: #b8c9dc;
+    margin-bottom: 12px;
+}
+
+.project-card a,
+#contact a {
+    color: #49a5ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SKILLS */
+
+#skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-item {
+    background: #10233a;
+    border: 1px solid #1b4168;
+    padding: 12px 22px;
+    border-radius: 8px;
+    color: #d8eaff;
+}
+
+/* CONTACT */
+
+#contact p {
+    color: #c0cede;
+    margin: 15px 0;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0b192b;
+    border-top: 1px solid #173657;
+    padding: 25px;
+    text-align: center;
+    color: #8fa6bd;
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar ul a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 65vh;
+        padding: 70px 15px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+}
